@@ -1,3 +1,6 @@
+<h1 align="center">Hola, soy Candela Nuñez <img src="../assets/la-red.gif" alt="Hi" width="70" />
+![](../assets/la-red.gif)
+
 # 🔬 Análisis de Capa 2: Trama Ethernet y Resolución ARP
 
 ## 🎯 Resumen de la Práctica
