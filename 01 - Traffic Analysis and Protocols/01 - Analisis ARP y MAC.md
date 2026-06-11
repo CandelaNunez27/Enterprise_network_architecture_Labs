@@ -4,7 +4,6 @@
 En este entorno de laboratorio se analizó el comportamiento del tráfico de red a nivel de Capa de Enlace de Datos (Capa 2) y Capa de Red (Capa 3). El objetivo principal fue auditar el intercambio de paquetes durante el descubrimiento de la puerta de enlace (Gateway) utilizando el protocolo ARP, y analizar la estructura de la trama Ethernet.
 
 ---
-
 ## 1. Identificación de la Puerta de Enlace y Conectividad
 Antes de analizar el tráfico, es fundamental conocer la topología lógica local. Se procedió a identificar la ruta por defecto del sistema y a verificar conectividad mediante ICMP.
 
