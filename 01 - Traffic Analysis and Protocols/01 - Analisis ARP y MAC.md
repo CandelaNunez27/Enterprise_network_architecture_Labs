@@ -20,8 +20,7 @@ Utilizando **Wireshark** en modo promiscuo sobre la interfaz conectada al switch
 
 ![](../assets/Pasted%20image%2020260611044702.png)
 
-
-
+![](../assets/Pasted%20image%2020260611044857.png)
 
 **Análisis Técnico:**
 * La trama Ethernet encapsula el paquete de Capa 3 (IPv4).
@@ -32,6 +31,7 @@ Utilizando **Wireshark** en modo promiscuo sobre la interfaz conectada al switch
 ## 3. Comportamiento del Protocolo ARP
 Para que el equipo local pudiera enviar el ping al Gateway, primero necesitó resolver su dirección MAC. Esto se logró mediante el protocolo **ARP (Address Resolution Protocol)**. En la captura se observan los dos tipos de operaciones principales:
 
+![](../assets/Pasted%20image%2020260611045147.png)
 
 **Explicación del flujo:**
 1. **ARP Request:** Es un mensaje de tipo **Broadcast** (`ff:ff:ff:ff:ff:ff`). Nuestro equipo pregunta a toda la red: *"¿Quién tiene esta IP? Díganmelo a mí"*. Al ser broadcast, todos los equipos en el dominio de difusión lo reciben.
@@ -44,8 +44,7 @@ Una vez que el intercambio ARP es exitoso, el sistema operativo guarda temporalm
 
 > **💻 Comando utilizado:** `arp -a`
 
-![imagen_consola_arp_a.png](imagen_consola_arp_a.png)
-*// CANDELA: Acá pega la captura final de tu Word 1.2 (la Imagen 8) donde se ve la salida de tu consola mostrando la tabla ARP con la MAC Address guardada (ej. `? (192.168.1.1) at 00:1a:2b...`).*
+![](../assets/Pasted%20image%2020260611045456.png)
 
 **Conclusión:**
 Revisar esta tabla es el primer paso en el diagnóstico de red (*troubleshooting*). Desde la perspectiva de ciberseguridad, monitorear cambios irregulares en esta tabla local es vital para detectar posibles ataques de **ARP Spoofing / Man-in-the-Middle**.
