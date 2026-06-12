@@ -80,7 +80,6 @@ Antes de configurar los equipos en la consola, es fundamental planificar el trá
 
 3. **Gateway (Siguiente Salto):** La dirección IP de la interfaz del router vecino por donde se debe enviar el paquete.
 
-  
 
 Tabla 1 (ROUTER 1)
 
@@ -91,16 +90,12 @@ Tabla 1 (ROUTER 1)
 | 10.0.0.16 | 0.0.0.0  | 255.255.255.252 | eth2  |
 | 10.0.0.12 | 0.0.0.0  | 255.255.255.252 | eth0  |
 
-  
-  
-
 Tabla 2 (PC 1)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|172.22.32.1|0.0.0.0|eth0|
-|172.22.32.0|0.0.0.0|255.255.255.0|eth0|
+| Destino     | Gateway     | Genmask       | Iface |
+| ----------- | ----------- | ------------- | ----- |
+| 0.0.0.0     | 172.22.32.1 | 0.0.0.0       | eth0  |
+| 172.22.32.0 | 0.0.0.0     | 255.255.255.0 | eth0  |
 
   
   
