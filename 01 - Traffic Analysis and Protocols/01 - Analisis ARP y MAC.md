@@ -1,10 +1,12 @@
 #  Análisis de Capa 2: Trama Ethernet y Resolución ARP
 
 ##  Resumen de la Práctica
+
 En este entorno de laboratorio se analizó el comportamiento del tráfico de red a nivel de Capa de Enlace de Datos (Capa 2) y Capa de Red (Capa 3). El objetivo principal fue auditar el intercambio de paquetes durante el descubrimiento de la puerta de enlace (Gateway) utilizando el protocolo ARP, y analizar la estructura de la trama Ethernet.
 
 ---
 ## 1. Identificación de la Puerta de Enlace y Conectividad
+
 Antes de analizar el tráfico, es fundamental conocer la topología lógica local. Se procedió a identificar la ruta por defecto del sistema y a verificar conectividad mediante ICMP.
 
 > **💻 Comando utilizado:** `route -n` e `ip route` para identificar el Gateway, seguido de un `ping` continuo.
@@ -15,6 +17,7 @@ Antes de analizar el tráfico, es fundamental conocer la topología lógica loca
 ---
 
 ## 2. Inspección de la Trama Ethernet (Capa 2)
+
 Utilizando **Wireshark** en modo promiscuo sobre la interfaz conectada al switch, se capturó el tráfico generado por el comando ping. Al inspeccionar el encabezado de la capa de enlace (Ethernet II), pudimos identificar claramente el direccionamiento físico.
 
 ![](../assets/Pasted%20image%2020260611044702.png)
@@ -28,6 +31,7 @@ Utilizando **Wireshark** en modo promiscuo sobre la interfaz conectada al switch
 ---
 
 ## 3. Comportamiento del Protocolo ARP
+
 Para que el equipo local pudiera enviar el ping al Gateway, primero necesitó resolver su dirección MAC. Esto se logró mediante el protocolo **ARP (Address Resolution Protocol)**. En la captura se observan los dos tipos de operaciones principales:
 
 ![](../assets/Pasted%20image%2020260611045147.png)
@@ -39,6 +43,7 @@ Para que el equipo local pudiera enviar el ping al Gateway, primero necesitó re
 ---
 
 ## 4. Auditoría de la Tabla ARP Local
+
 Una vez que el intercambio ARP es exitoso, el sistema operativo guarda temporalmente esta asociación en caché para no saturar la red con preguntas constantes.
 
 > **💻 Comando utilizado:** `arp -a`
