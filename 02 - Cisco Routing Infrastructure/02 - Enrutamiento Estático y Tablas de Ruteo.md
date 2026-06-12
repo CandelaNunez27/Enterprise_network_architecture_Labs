@@ -66,7 +66,7 @@ El propósito de este laboratorio es comprender la lógica de reenvío de paquet
 
 Para este desafío se analizó una infraestructura amplia con múltiples routers interconectados, donde cada nodo administra subredes específicas. La complejidad de este escenario radica en la cantidad de saltos necesarios para comunicar los equipos que se encuentran en los extremos opuestos de la red.
 
-![](../assets/Topologia_MultiRouters.png)
+![697](../assets/Topologia_MultiRouters.png)
 
 ---
 
@@ -107,123 +107,83 @@ Tabla 3 (ROUTER 2)
 
 Tabla 4 (PC 2)
 
-|             |             |                 |       |
-| ----------- | ----------- | --------------- | ----- |
 | Destino     | Gateway     | Genmask         | Iface |
+| ----------- | ----------- | --------------- | ----- |
 | 0.0.0.0     | 172.22.34.1 | 0.0.0.0         | eth0  |
 | 172.22.34.0 | 0.0.0.0     | 255.255.255.128 | eth0  |
 
-  
-  
-
 Tabla 5 (PC 3)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|172.22.36.193|0.0.0.0|eth0|
-|172.22.36.192|0.0.0.0|255.255.255.192|eth0|
-
-  
-  
+| Destino       | Gateway       | Genmask         | Iface |
+| ------------- | ------------- | --------------- | ----- |
+| 0.0.0.0       | 172.22.36.193 | 0.0.0.0         | eth0  |
+| 172.22.36.192 | 0.0.0.0       | 255.255.255.192 | eth0  |
 
 Tabla 6 (ROUTER 3)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|10.0.0.13|0.0.0.0|eth1|
-|10.0.0.12|0.0.0.0|255.255.255.252|eth1|
-|172.22.35.0|0.0.0.0|255.255.255.0|eth0|
-
-  
-  
+| Destino     | Gateway   | Genmask         | Iface |
+| ----------- | --------- | --------------- | ----- |
+| 0.0.0.0     | 10.0.0.13 | 0.0.0.0         | eth1  |
+| 10.0.0.12   | 0.0.0.0   | 255.255.255.252 | eth1  |
+| 172.22.35.0 | 0.0.0.0   | 255.255.255.0   | eth0  |
 
 Tabla 7 (PC 4)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|172.22.37.254|0.0.0.0|eth0|
-|172.22.37.0|0.0.0.0|255.255.255.0|eth0|
-
-  
-  
+| Destino     | Gateway       | Genmask       | Iface |
+| ----------- | ------------- | ------------- | ----- |
+| 0.0.0.0     | 172.22.37.254 | 0.0.0.0       | eth0  |
+| 172.22.37.0 | 0.0.0.0       | 255.255.255.0 | eth0  |
 
 Tabla 8 (ROUTER 4)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|10.0.0.6|0.0.0.0|eth1|
-|10.0.0.4|0.0.0.0|255.255.255.252|eth1|
-|10.0.0.0|0.0.0.0|255.255.255.252|eth2|
-|172.22.33.0|0.0.0.0|255.255.255.0|eth0|
-
-  
-  
+| Destino     | Gateway  | Genmask         | Iface |
+| ----------- | -------- | --------------- | ----- |
+| 0.0.0.0     | 10.0.0.6 | 0.0.0.0         | eth1  |
+| 10.0.0.4    | 0.0.0.0  | 255.255.255.252 | eth1  |
+| 10.0.0.0    | 0.0.0.0  | 255.255.255.252 | eth2  |
+| 172.22.33.0 | 0.0.0.0  | 255.255.255.0   | eth0  |
 
 Tabla 9 (ROUTER 5)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|10.0.0.22|0.0.0.0|eth2|
-|10.0.0.4|0.0.0.0|255.255.255.252|eth1|
-|10.0.0.20|0.0.0.0|255.255.255.252|eth2|
-|10.0.0.8|0.0.0.0|255.255.255.252|eth3|
-|172.22.34.0|0.0.0.0|255.255.255.128|eth0|
-|172.22.34.128|0.0.0.0|255.255.255.128|eth4|
-
-  
-  
+| Destino       | Gateway   | Genmask         | Iface |
+| ------------- | --------- | --------------- | ----- |
+| 0.0.0.0       | 10.0.0.22 | 0.0.0.0         | eth2  |
+| 10.0.0.4      | 0.0.0.0   | 255.255.255.252 | eth1  |
+| 10.0.0.20     | 0.0.0.0   | 255.255.255.252 | eth2  |
+| 10.0.0.8      | 0.0.0.0   | 255.255.255.252 | eth3  |
+| 172.22.34.0   | 0.0.0.0   | 255.255.255.128 | eth0  |
+| 172.22.34.128 | 0.0.0.0   | 255.255.255.128 | eth4  |
 
 Tabla 10 (PC 5)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|172.22.36.62|0.0.0.0|eth0|
-|172.22.36.0|0.0.0.0|255.255.255.192|eth0|
-
-  
-  
+| Destino     | Gateway      | Genmask         | Iface |
+| ----------- | ------------ | --------------- | ----- |
+| 0.0.0.0     | 172.22.36.62 | 0.0.0.0         | eth0  |
+| 172.22.36.0 | 0.0.0.0      | 255.255.255.192 | eth0  |
 
 Tabla 11 (ROUTER 6)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|10.0.0.17|0.0.0.0|eth1|
-|10.0.0.16|0.0.0.0|255.255.255.252|eth1|
-|172.22.36.0|0.0.0.0|255.255.255.192|eth2|
-
+| Destino     | Gateway   | Genmask         | Iface |
+| ----------- | --------- | --------------- | ----- |
+| 0.0.0.0     | 10.0.0.17 | 0.0.0.0         | eth1  |
+| 10.0.0.16   | 0.0.0.0   | 255.255.255.252 | eth1  |
+| 172.22.36.0 | 0.0.0.0   | 255.255.255.192 | eth2  |
   
-  
-
 Tabla 12 (PC 6)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|172.22.35.1|0.0.0.0|eth0|
-|172.22.35.0|0.0.0.0|255.255.255.0|eth0|
-
-  
-  
+| Destino     | Gateway     | Genmask       | Iface |
+| ----------- | ----------- | ------------- | ----- |
+| 0.0.0.0     | 172.22.35.1 | 0.0.0.0       | eth0  |
+| 172.22.35.0 | 0.0.0.0     | 255.255.255.0 | eth0  |
 
 Tabla 13 (ROUTER 7)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|200.52.1.5|0.0.0.0|eth1|
-|200.52.1.0|0.0.0.0|255.255.255.192|eth1|
-|172.22.37.0|0.0.0.0|255.255.255.0|eth2|
-|10.0.0.20|0.0.0.0|255.255.255.252|eth0|
-
-  
-  
+| Destino     | Gateway    | Genmask         | Iface |
+| ----------- | ---------- | --------------- | ----- |
+| 0.0.0.0     | 200.52.1.5 | 0.0.0.0         | eth1  |
+| 200.52.1.0  | 0.0.0.0    | 255.255.255.192 | eth1  |
+| 172.22.37.0 | 0.0.0.0    | 255.255.255.0   | eth2  |
+| 10.0.0.20   | 0.0.0.0    | 255.255.255.252 | eth0  |
 
 Tabla 14 (PC 7)
 
@@ -251,10 +211,11 @@ La sintaxis utilizada en Cisco IOS es:
 > Para que los paquetes puedan viajar entre las distintas LANs y no sean descartados en el camino, se aplicaron rutas estáticas apuntando a las interfaces de los routers vecinos (utilizando las IPs de los enlaces punto a punto, como las redes `10.0.0.X` o `172.22.X.X` documentadas en las tablas).
 
 ```bash
-Router(config)# ip route 192.168.2.0 255.255.255.0 10.0.0.2
+# Tabla 13 (ROUTER 7)
+Router(config)# ip route 172.22.2.0 255.255.255.0 10.0.0.2
 ````
 
-_(Este proceso se repitió sistemáticamente en cada nodo clave del Caso C para asegurar respuestas bidireccionales y evitar el error "Destination Unreachable")._
+_(Este proceso se repitió sistemáticamente en cada nodo clave del Caso C para asegurar respuestas bidireccionales y evitar el error "Destination Unreachable").
 
 ## 4. Configuración de Salida a Internet (Default Gateway)
 
