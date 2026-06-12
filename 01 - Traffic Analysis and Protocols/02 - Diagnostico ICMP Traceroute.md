@@ -7,25 +7,19 @@ El propósito de este laboratorio es emplear el protocolo **ICMP (Internet Contr
 
 ## 1. Topología del Laboratorio
 Para las pruebas de diagnóstico, se utilizó una topología estructurada con dos estaciones de trabajo (PC1 y PC2) separadas por un enrutador (Gateway), simulando un entorno de múltiples redes lógicas.
-
-![[imagen_packet_tracer_topologia.png]]
-*// CANDELA: Acá pega la imagen número 4 de tu documento ACT 1.8, que es la captura de Packet Tracer donde se ven las dos PC (PC LAB 1 y PC LAB 2) conectadas al Router ITU.*
+![](../assets/routers.jpg)
 
 ---
 
 ## 2. Verificación de Conectividad Base (Ping)
 Se inició el diagnóstico mediante la herramienta `ping` para medir la latencia y la tasa de pérdida de paquetes entre los nodos del laboratorio.
-
-![[imagen_consola_ping.png]]
-*// CANDELA: Acá pega la primera captura de consola del punto 2 de tu ACT 1.8 (donde haces "ping 172.22.73.116" o al 114).*
-
+![](../assets/Pasted%20image%2020260611212451.png)
+![](../assets/Pasted%20image%2020260611212610.png)
 ### Inspección Profunda (Deep Packet Inspection)
 Para comprender el funcionamiento interno del comando, se analizó el flujo bidireccional en **Wireshark**. Se comprobó que el protocolo ICMP no utiliza puertos (al operar en la capa de Red), sino **Tipos (Types)** y **Códigos (Codes)**:
 * **Type 8 (Echo Request):** Solicitud generada por el nodo origen.
 * **Type 0 (Echo Reply):** Respuesta de confirmación generada por el nodo destino.
 
-![[imagen_wireshark_icmp_type8.png]]
-*// CANDELA: Acá pega la captura de Wireshark del punto 3 de tu ACT 1.8, donde está resaltado en amarillo "Internet Control Message Protocol Type: 8 (Echo (ping) request)".*
 
 ---
 
