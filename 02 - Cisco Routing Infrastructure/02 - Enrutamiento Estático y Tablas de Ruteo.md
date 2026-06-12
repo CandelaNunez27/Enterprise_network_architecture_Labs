@@ -1,15 +1,4 @@
-# 🗺️ Enrutamiento Estático y Análisis de Tablas de Ruteo
 
-## 🎯 Objetivo de la Práctica
-El propósito de este laboratorio es comprender la lógica de reenvío de paquetes (forwarding) en la Capa 3 mediante la construcción y análisis de **Tablas de Enrutamiento**. Además, se implementan rutas estáticas manuales en equipos Cisco para interconectar redes LAN segmentadas y se configura una ruta por defecto (Default Gateway) para garantizar la salida a Internet.
-
----
-
-## 1. Topología Multi-Sucursal
-Se desplegó una infraestructura con múltiples routers interconectados mediante enlaces WAN, donde cada router administra su propia red de área local (LAN) aislada (ej. `192.168.1.0/24`, `192.168.2.0/24`, etc.).
-
-![[topologia_rutas_estaticas.png]]
-*// CANDELA: Acá pega la imagen principal de la topología de tu "ACT 1.6", donde se ven los routers conectados en cadena con las nubes/LANs colgando abajo.*
 
 ---
 
