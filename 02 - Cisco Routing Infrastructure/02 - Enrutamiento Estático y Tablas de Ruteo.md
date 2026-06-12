@@ -84,9 +84,8 @@ Antes de configurar los equipos en la consola, es fundamental planificar el trá
 
 Tabla 1 (ROUTER 1)
 
-|           |          |                 |       |
-| --------- | -------- | --------------- | ----- |
 | Destino   | Gateway  | Genmask         | Iface |
+| --------- | -------- | --------------- | ----- |
 | 0.0.0.0   | 10.0.0.9 | 0.0.0.0         | eth1  |
 | 10.0.0.8  | 0.0.0.0  | 255.255.255.252 | eth1  |
 | 10.0.0.16 | 0.0.0.0  | 255.255.255.252 | eth2  |
