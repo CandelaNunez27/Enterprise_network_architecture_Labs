@@ -11,7 +11,7 @@ El dominio del enrutamiento es esencial para cualquier administrador de infraest
 A continuación, se detallan los documentos técnicos de esta sección. Haz clic en cada enlace para revisar las topologías, los comandos ejecutados y las pruebas de conectividad:
 
 * **[[01 - Administracion Cisco IOS]]:** Exploración de la arquitectura interna de un router Cisco (RAM, ROM, Flash, NVRAM), navegación entre modos de ejecución (Usuario, Privilegiado, Configuración Global) y levantamiento inicial de interfaces GigabitEthernet.
-* **[02 - Enrutamiento Estático y Tablas de Ruteo](./02-Enrutamiento-Estatico.md):** Análisis y construcción manual de Tablas de Ruteo. Configuración de rutas estáticas (`ip route`) y puertas de enlace predeterminadas (*Default Gateways*) para interconectar múltiples sucursales simuladas y proveer salida a Internet.
+* **[[02 - Enrutamiento Estático y Tablas de Ruteo]]:** Análisis y construcción manual de Tablas de Ruteo. Configuración de rutas estáticas (`ip route`) y puertas de enlace predeterminadas (*Default Gateways*) para interconectar múltiples sucursales simuladas y proveer salida a Internet.
 * **[03 - Enrutamiento Dinámico (RIP) y Alta Disponibilidad](./03-Enrutamiento-Dinamico-RIP.md):** Despliegue del protocolo de enrutamiento Vector-Distancia (RIP). Simulación de fallos físicos en una topología en anillo para auditar la convergencia automática de la red y el descubrimiento de rutas alternativas.
 
 ## 🛠️ Stack de Herramientas Empleadas
