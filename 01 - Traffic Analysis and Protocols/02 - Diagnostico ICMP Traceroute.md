@@ -31,8 +31,7 @@ Para comprender el funcionamiento interno del comando, se analizó el flujo bidi
 ## 3. Rastreo de Rutas (Traceroute) y TTL
 Para auditar los saltos (routers) por los que atraviesa un paquete IP hasta llegar a un destino en Internet, se utilizó el comando `tracert` (o `traceroute` en Linux) apuntando a un servidor externo (ej. `www.google.com`).
 
-![[imagen_consola_tracert_google.png]]
-*// CANDELA: Acá pega la captura de consola del punto 5 de tu ACT 1.8 donde se ve la ejecución de "tracert www.google.com" resolviendo la IP y mostrando los saltos.*
+![](../assets/Pasted%20image%2020260611233125.png)
 
 ### ¿Cómo funciona el Traceroute a nivel de paquetes?
 Al auditar este proceso con el sniffer, se comprobó la manipulación intencional del campo **TTL (Time To Live)** del encabezado IP:
