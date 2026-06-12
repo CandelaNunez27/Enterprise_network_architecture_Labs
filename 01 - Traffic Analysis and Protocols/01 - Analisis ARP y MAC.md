@@ -1,11 +1,6 @@
-<img src="../assets/la-red.gif" alt="Hi" width="70" /><h1 align="center">Análisis de Capa 2: Trama Ethernet y Resolución ARP 
+#  Análisis de Capa 2: Trama Ethernet y Resolución ARP
 
-
-![](../assets/la-red.gif)
-
-# 🔬 Análisis de Capa 2: Trama Ethernet y Resolución ARP
-
-## 🎯 Resumen de la Práctica
+##  Resumen de la Práctica
 En este entorno de laboratorio se analizó el comportamiento del tráfico de red a nivel de Capa de Enlace de Datos (Capa 2) y Capa de Red (Capa 3). El objetivo principal fue auditar el intercambio de paquetes durante el descubrimiento de la puerta de enlace (Gateway) utilizando el protocolo ARP, y analizar la estructura de la trama Ethernet.
 
 ---

@@ -17,7 +17,10 @@ Se analizó el funcionamiento del protocolo **ARP (Address Resolution Protocol)*
 * **Mecanismo de Broadcast:** Inspección de tramas *ARP Request* dirigidas a la dirección MAC de difusión (`ff:ff:ff:ff:ff:ff`) para averiguar la dirección física del router.
 * **Mecanismo de Unicast:** Verificación de las tramas *ARP Reply* enviadas directamente desde el Gateway para asociar su IP con su dirección MAC.
 * **Inspección de Tablas Locales:** Mapeo de la memoria caché local del sistema mediante el uso del comando de consola:
-  ```bash
-  arp -a
-  # O su alternativa moderna en suites iproute2:
-  ip neigh show
+
+```bash
+arp -a
+# O su alternativa moderna en suites iproute2:
+ip neigh show
+```
+
