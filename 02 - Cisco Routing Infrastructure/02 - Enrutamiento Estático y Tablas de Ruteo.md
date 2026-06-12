@@ -88,13 +88,13 @@ El propósito de este laboratorio es comprender la lógica de reenvío de paquet
 
 Para este desafío se analizó una infraestructura amplia con múltiples routers interconectados, donde cada nodo administra subredes específicas. La complejidad de este escenario radica en la cantidad de saltos necesarios para comunicar los equipos que se encuentran en los extremos opuestos de la red.
 
-![[topologia_caso_c_packet_tracer.png]]
-*// CANDELA: Acá recorta y pega la imagen general de la topología del Caso C que tenés en tu archivo "ACT 1.5" (donde se ven todos los routers y las PCs conectadas).*
+![](../assets/Topologia_MultiRouters.png)
 
 ---
 
 ## 2. Lógica de la Tabla de Enrutamiento
-Antes de configurar los equipos en la consola, es fundamental planificar el tráfico de forma teórica. Un router solo conoce las redes que tiene directamente conectadas en sus interfaces. Para alcanzar destinos remotos en el Caso C, se estructuraron rutas que contienen tres elementos clave:
+
+Antes de configurar los equipos en la consola, es fundamental planificar el tráfico de forma teórica. Un router solo conoce las redes que tiene directamente conectadas en sus interfaces. Para alcanzar destinos remotos, se estructuraron rutas que contienen tres elementos clave:
 1. **Destino:** La red a la que queremos llegar.
 2. **Genmask (Máscara):** El tamaño de esa red destino.
 3. **Gateway (Siguiente Salto):** La dirección IP de la interfaz del router vecino por donde se debe enviar el paquete.
