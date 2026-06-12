@@ -9,8 +9,7 @@ El propósito de este laboratorio es implementar un protocolo de enrutamiento di
 
 Para realizar las pruebas de redundancia, se construyó una topología cerrada en forma de anillo compuesta por cinco routers Cisco. Esta arquitectura garantiza que existan múltiples caminos lógicos para llegar desde cualquier origen a cualquier destino.
 
-![[topologia_anillo_5_routers.png]]
-*// CANDELA: Acá pega la imagen número 1 de tu archivo "AT 1.10", donde se ve el círculo con los 5 routers (Router A, B, C, D, E) y sus respectivas PCs.*
+![](../assets/Pasted%20image%2020260612165209.png)
 
 ---
 
