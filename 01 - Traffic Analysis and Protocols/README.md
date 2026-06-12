@@ -1,26 +1,19 @@
-# 🔬 Laboratorio 01: Protocol Analysis & Traffic Inspection (Wireshark)
+# 🕵️‍♀️ Laboratorio 01: Traffic Analysis & Core Protocols
 
-## 🎯 Objetivo
-El propósito de este laboratorio es analizar el comportamiento real de los protocolos fundamentales de la suite TCP/IP en las capas de Enlace, Red y Transporte mediante la captura e inspección de paquetes en vivo. Esto permite comprender los flujos de comunicación cliente-servidor y realizar diagnósticos de conectividad (*troubleshooting*).
+## 📌 Descripción de la Sección
 
-## 🛠️ Herramientas Utilizadas
-* **Analizador de Protocolos:** Wireshark.
-* **Entorno de Pruebas:** Ubuntu Linux Terminal / Laboratorio Físico.
-* **Herramientas de Diagnóstico:** `ping`, `route`, `traceroute`, `resolvectl`.
+Este directorio contiene entornos prácticos enfocados en la auditoría y análisis de tráfico de red. El objetivo principal es salir de la teoría del Modelo OSI y observar cómo se comportan los paquetes reales en las capas de Enlace, Red y Transporte utilizando herramientas de inspección profunda.
 
----
+## 🗂️ Índice de Prácticas
 
-## 💻 Desarrollos y Análisis Prácticos
+* **[01 - Análisis de Capa 2: MAC y ARP](01%20-%20Analisis%20ARP%20y%20MAC.md):** Inspección de direccionamiento físico (MAC), funcionamiento de solicitudes/respuestas ARP en entornos de red local y análisis de tablas de vecinos.
 
-### 1. Descubrimiento de Capa 2 y Resolución de Direcciones (ARP & MAC)
-Se analizó el funcionamiento del protocolo **ARP (Address Resolution Protocol)** al iniciar solicitudes de comunicación hacia el Gateway de la red.
-* **Mecanismo de Broadcast:** Inspección de tramas *ARP Request* dirigidas a la dirección MAC de difusión (`ff:ff:ff:ff:ff:ff`) para averiguar la dirección física del router.
-* **Mecanismo de Unicast:** Verificación de las tramas *ARP Reply* enviadas directamente desde el Gateway para asociar su IP con su dirección MAC.
-* **Inspección de Tablas Locales:** Mapeo de la memoria caché local del sistema mediante el uso del comando de consola:
+* **[02 - Análisis y Diagnóstico de Red con ICMP](02%20-%20Análisis%20y%20Diagnóstico%20de%20Red%20con%20ICMP):** Monitoreo de mensajes de control bidireccionales, rastreo de saltos lógicos mediante la manipulación del TTL (`traceroute`) y diagnóstico estructurado de fallas (interpretación de mensajes *Destination Unreachable*).
 
-```bash
-arp -a
-# O su alternativa moderna en suites iproute2:
-ip neigh show
-```
+* **[03 - Análisis de Capa de Transporte: TCP vs UDP](03%20-%20Análisis%20de%20Capa%20de%20Transporte:%20TCP%20vs%20UDP):** Comparativa de protocolos en entornos reales. Captura del *Three-Way Handshake* de TCP hacia un servidor web local (Apache2), análisis del control de flujo (Window Size) y rutinas de finalización, contrastado con el tráfico *stateless* de UDP en resoluciones DNS.
+
+## 🛠️ Herramientas Empleadas
+* **Analizador de Protocolos:** Wireshark en modo promiscuo.
+* **Comandos de Diagnóstico:** `ping`, `traceroute`, `arp`, `route`, utilidades de la suite `iproute2`.
+* **Entorno y Servicios Simulados:** Ubuntu Server, Apache2 (HTTP), consultas de resolución DNS.
 
