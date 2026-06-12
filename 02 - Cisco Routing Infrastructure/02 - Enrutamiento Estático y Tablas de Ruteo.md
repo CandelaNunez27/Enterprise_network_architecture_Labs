@@ -2,17 +2,6 @@
 
 ---
 
-## 2. Lógica de la Tabla de Enrutamiento
-Antes de aplicar comandos, es vital planificar lógicamente el tráfico. Un router solo conoce las redes que tiene directamente conectadas. Para cualquier otro destino, necesita una instrucción precisa que contenga tres elementos clave:
-1. **Red Destino:** La IP de la red a la que queremos llegar.
-2. **Máscara (Genmask):** El tamaño de esa red destino.
-3. **Gateway / Siguiente Salto:** La dirección IP de la interfaz del router vecino que nos ayudará a llegar a ese destino (o en su defecto, nuestra propia interfaz de salida).
-
-![[tabla_ruteo_manual.png]]
-*// CANDELA: Acá hace un recorte y pega una de las tablas que rellenaste en tu archivo "ACT 1.5" (por ejemplo, la Tabla 8 del Router 4, para que se vea cómo estructuraste mentalmente los destinos y gateways).*
-
----
-
 ## 3. Implementación de Rutas Estáticas en IOS
 Para interconectar las subredes internas, ingresamos al modo de configuración global de cada router y aplicamos el enrutamiento manual. 
 
@@ -95,13 +84,13 @@ Antes de configurar los equipos en la consola, es fundamental planificar el trá
 
 Tabla 1 (ROUTER 1)
 
-|   |   |   |   |
-|---|---|---|---|
-|Destino|Gateway|Genmask|Iface|
-|0.0.0.0|10.0.0.9|0.0.0.0|eth1|
-|10.0.0.8|0.0.0.0|255.255.255.252|eth1|
-|10.0.0.16|0.0.0.0|255.255.255.252|eth2|
-|10.0.0.12|0.0.0.0|255.255.255.252|eth0|
+|           |          |                 |       |
+| --------- | -------- | --------------- | ----- |
+| Destino   | Gateway  | Genmask         | Iface |
+| 0.0.0.0   | 10.0.0.9 | 0.0.0.0         | eth1  |
+| 10.0.0.8  | 0.0.0.0  | 255.255.255.252 | eth1  |
+| 10.0.0.16 | 0.0.0.0  | 255.255.255.252 | eth2  |
+| 10.0.0.12 | 0.0.0.0  | 255.255.255.252 | eth0  |
 
   
   
