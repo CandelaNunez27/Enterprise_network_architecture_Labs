@@ -32,15 +32,14 @@ Para comprender el funcionamiento interno del comando, se analizó el flujo bidi
 Para auditar los saltos (routers) por los que atraviesa un paquete IP hasta llegar a un destino en Internet, se utilizó el comando `tracert` (o `traceroute` en Linux) apuntando a un servidor externo (ej. `www.google.com`).
 
 ![](../assets/Pasted%20image%2020260611233125.png)
+![](../assets/Pasted%20image%2020260611234138.png)
 
 ### ¿Cómo funciona el Traceroute a nivel de paquetes?
 Al auditar este proceso con el sniffer, se comprobó la manipulación intencional del campo **TTL (Time To Live)** del encabezado IP:
 1. El equipo envía un paquete ICMP con **TTL = 1**.
 2. El primer router recibe el paquete, disminuye el TTL a 0, lo descarta y devuelve un error **ICMP Type 11 (Time-to-live exceeded)**, revelando así su dirección IP.
 3. El equipo envía el siguiente paquete con **TTL = 2**, descubriendo el segundo router, y así sucesivamente hasta alcanzar el destino.
-
-![[imagen_wireshark_ttl_exceeded.png]]
-*// CANDELA: Acá pega la captura de Wireshark del punto 6 de tu ACT 1.8 donde se ve el encabezado ICMP indicando "Type: 11 (Time-to-live exceeded)".*
+![](../assets/Pasted%20image%2020260611234600.png)
 
 ---
 
@@ -49,6 +48,8 @@ Durante las pruebas de ruteo, se evaluaron anomalías en la comunicación:
 
 ### ⏱️ Timeouts (Asteriscos en Traceroute)
 Al ejecutar el comando de rastreo, ocasionalmente se visualizaron asteriscos (`* * *`). Esto ocurre cuando un router intermedio rechaza responder con mensajes *ICMP Time Exceeded* por políticas de seguridad (Firewall), resultando en un tiempo de espera agotado para ese salto en particular.
+
+![](../assets/Pasted%20image%2020260611234706.png)
 
 ### 🚫 Destination Unreachable (Type 3)
 Se analizó teóricamente el comportamiento de la red ante fallas críticas, clasificando los tres escenarios principales donde un router o host emite un mensaje *Destination Unreachable*:
