@@ -1,6 +1,7 @@
 #  Enrutamiento Dinámico (RIPv2) y Convergencia de Red
 
 ##  Objetivo de la Práctica
+
 El propósito de este laboratorio es implementar un protocolo de enrutamiento dinámico de tipo *Vector-Distancia* para automatizar el descubrimiento de rutas. El objetivo principal es evaluar la capacidad de **Convergencia y Alta Disponibilidad (HA)** de la red frente a la caída física de enlaces, comparando su rendimiento contra infraestructuras de enrutamiento estrictamente estático.
 
 ---
@@ -39,21 +40,21 @@ Router(config-router)# network 192.168.1.0  # Anunciando la red LAN
 Router(config-router)# network 10.0.0.0     # Anunciando la red WAN vecina
 ```
 
-
 _(Esta configuración se aplicó en los 5 nodos del anillo, declarando las redes directamente conectadas de cada uno)._
 
 ## 4. Auditoría de Convergencia y Prueba de Redundancia
 
 Una vez que RIP propagó las tablas de ruteo basándose en la métrica de _Cantidad de Saltos (Hops)_, se realizó la prueba de fuego: **simular nuevamente la caída del enlace entre Router A y Router B**.
 
-![[prueba_ping_redundancia.png]] _// CANDELA: Acá podés agregar una captura de consola si tenés algún ping exitoso de la AT 1.10 luego de borrar el enlace, o simplemente dejar el texto explicativo de abajo._
+![](../assets/Pasted%20image%2020260612170115.png)
+![](../assets/Pasted%20image%2020260612170202.png)
 
 **Resultados de la Prueba de Alta Disponibilidad:** A pesar de la interrupción física del enlace principal, la comunicación no se perdió. El protocolo RIP detectó la ausencia de actualizaciones de estado, recalculó las métricas y actualizó dinámicamente las tablas de todos los routers, encontrando el camino alternativo en sentido antihorario a través del anillo.
 
 **Métricas del Protocolo:**
 
 - **Tipo:** Vector-Distancia.
-    
+
 - **Métrica evaluada:** Cantidad de saltos (máximo 15 saltos permitidos).
-    
+
 - **Adaptabilidad:** Altamente resiliente ante caídas de hardware en redes de tamaño pequeño/mediano.
