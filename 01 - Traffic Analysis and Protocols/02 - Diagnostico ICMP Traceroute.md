@@ -20,6 +20,11 @@ Para comprender el funcionamiento interno del comando, se analizó el flujo bidi
 * **Type 8 (Echo Request):** Solicitud generada por el nodo origen.
 * **Type 0 (Echo Reply):** Respuesta de confirmación generada por el nodo destino.
 
+![](../assets/Pasted%20image%2020260611213327.png)
+![](../assets/Pasted%20image%2020260611213503.png)
+
+![](../assets/Pasted%20image%2020260611213611.png)
+![](../assets/Pasted%20image%2020260611213652.png)
 
 ---
 
