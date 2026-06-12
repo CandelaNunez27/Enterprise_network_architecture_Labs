@@ -35,3 +35,30 @@ La sintaxis utilizada para indicar a un router cómo alcanzar una red remota es:
 
 ```bash
 Router(config)# ip route 192.168.1.0 255.255.255.0 10.0.0.1
+```
+
+_(Este proceso se repitió sistemáticamente en cada nodo de la red para garantizar el enrutamiento bidireccional, evitando así el error de "Destination Unreachable")._
+
+## 4. Configuración de Salida a Internet (Default Gateway)
+
+En un entorno corporativo, es inviable conocer las direcciones de todos los servidores de Internet. Para solucionar esto, se implementa una **Ruta por Defecto** (o Ruta de Último Recurso).
+
+Esta regla le indica al router: _"Si llega un paquete con un destino que no está en tu tabla de enrutamiento, envíalo por este camino hacia el Proveedor de Servicios (ISP)"_.
+
+> **💻 Comando de configuración del Default Gateway:**
+
+Bash
+
+```
+# Red destino 0.0.0.0 con máscara 0.0.0.0 engloba cualquier IP de Internet
+Router(config)# ip route 0.0.0.0 0.0.0.0 [IP_DEL_ROUTER_PROVEEDOR]
+```
+
+## 5. Auditoría y Verificación
+
+Una vez aplicadas las políticas de enrutamiento, se valida la configuración leyendo la tabla activa del router.
+
+> **💻 Comando utilizado:** `show ip route`
+
+En la salida de este comando, las rutas aprendidas manualmente aparecen marcadas con la letra **`S`** (Static), mientras que la ruta de salida a Internet aparece como **`S*`** (Static Candidate Default). La conectividad end-to-end se verificó exitosamente mediante tráfico ICMP (ping) entre las computadoras de los extremos opuestos de la topología.
+

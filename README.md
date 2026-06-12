@@ -14,7 +14,7 @@ El objetivo de este repositorio es demostrar mis habilidades prácticas en las c
 
 ## 📂 Estructura del Laboratorio
 
-### 1. [Traffic Analysis & Core Protocols](./01-Traffic-Analysis-and-Proto)
+### 1. [Traffic](01%20-%20Traffic%20Analysis%20and%20Protocols/README.md)
 Análisis profundo del comportamiento de los paquetes en la red para identificar cuellos de botella y comprender la comunicación cliente-servidor.
 * Captura e inspección del *Three-Way Handshake* (TCP) y sesiones UDP.
 * Resolución de direcciones MAC e IP mediante **ARP** y análisis de tablas de vecinos (`ip neigh`).
