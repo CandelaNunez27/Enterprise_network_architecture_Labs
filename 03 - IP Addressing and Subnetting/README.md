@@ -7,7 +7,7 @@ Aquí se exponen ejercicios prácticos de cálculo de subredes (Subnetting) util
 
 ## 🗂️ Índice de Prácticas
 
-* **[01 - Planificación de Capacidad y Subnetting (IPv4)](01%20-%20Planificación%20de%20Capacidad%20y%20Subnetting%20(IPv4).md):** Demostración de cálculos de direccionamiento lógico, determinación de rangos de hosts utilizables, identificación de direcciones de red/broadcast y uso de herramientas de consola para IPAM.
+* **[01 - Subnetting Capacity Planning](01%20-%20Subnetting%20Capacity%20Planning.md):** Demostración de cálculos de direccionamiento lógico, determinación de rangos de hosts utilizables, identificación de direcciones de red/broadcast y uso de herramientas de consola para IPAM.
 
 ## 🛠️ Herramientas Empleadas
 * **Cálculo de subredes:** Lógica binaria / Operaciones AND lógicas.
