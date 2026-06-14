@@ -1,47 +1,32 @@
 # 🌐 Enterprise Network Architecture & Protocol Analysis
 
-¡Hola! 👩‍💻. Este repositorio documenta mis laboratorios prácticos y entornos de prueba enfocados en el diseño, configuración y resolución de problemas (troubleshooting) de infraestructuras de red.
+¡Hola! Soy **Candela Nuñez** 👩‍💻. Tecnicatura en Redes de Datos y Telecomunicaciones.
 
-El objetivo de este repositorio es demostrar mis habilidades prácticas en las capas 2, 3 y 4 del modelo OSI, utilizando tanto equipamiento propietario (Cisco) como herramientas open-source (Linux, Wireshark).
+Este repositorio es mi entorno de laboratorio. Aquí documento mis prácticas enfocadas en el diseño, configuración y resolución de problemas (*troubleshooting*) de infraestructuras de red. Mi objetivo es ir más allá de la teoría y demostrar, con capturas y comandos reales, cómo se comportan los datos desde el momento en que salen de una interfaz de red hasta que llegan a un servidor.
 
-## 🛠️ Stack Tecnológico y Herramientas
-* **OS & Networking:** Ubuntu/Alpine Linux (Netplan, iproute2, tcpdump).
-* **Routing & Switching:** Cisco IOS, Packet Tracer, MikroTik (Conceptos).
-* **Análisis de Tráfico:** Wireshark (Filtros, análisis de payload, TCP/UDP/ICMP).
-* **Protocolos Dominados:** TCP/IP, ARP, ICMP, RIP, OSPF, DNS, DHCP.
+## 🚀 ¿Qué vas a encontrar aquí?
 
----
+El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 4 del modelo OSI. En ellas utilizo tanto equipamiento propietario (Cisco) como herramientas open-source (Linux, Wireshark).
 
-## 📂 Estructura del Laboratorio
+### 📂 Índice del Repositorio
 
-### 1. [Traffic](01%20-%20Traffic%20Analysis%20and%20Protocols/README.md)
-Análisis profundo del comportamiento de los paquetes en la red para identificar cuellos de botella y comprender la comunicación cliente-servidor.
-* Captura e inspección del *Three-Way Handshake* (TCP) y sesiones UDP.
-* Resolución de direcciones MAC e IP mediante **ARP** y análisis de tablas de vecinos (`ip neigh`).
-* Diagnóstico avanzado con **ICMP** (`ping`, `traceroute`) e interpretación de mensajes *Destination Unreachable*.
-* Identificación de dominios de colisión y difusión (Broadcast/Multicast/Unicast).
+* 🔬 **[1. Análisis de Tráfico y Protocolos Core](01%20-%20Traffic%20Analysis%20and%20Protocols/README.md):** Inspección profunda de paquetes (*Deep Packet Inspection*) con Wireshark. Análisis del *Three-Way Handshake* (TCP), tráfico *stateless* (UDP), resolución ARP y diagnóstico perimetral con ICMP.
+  
+* 🗺️ **[02. Infraestructura y Ruteo Cisco](02%20-%20Cisco%20Routing%20Infrastructure/README.md):** Diseño de topologías LAN/WAN. Configuración de IOS desde cero, administración manual de tablas de ruteo en topologías de gran escala y pruebas de convergencia / Alta Disponibilidad con ruteo dinámico (RIPv2).
 
-### 2. [Cisco Routing & Infrastructure](./02-Cisco-Routing-Infrastructure)
-Diseño de topologías LAN/WAN y configuración de routers mediante Cisco CLI.
-* Implementación de **Rutas Estáticas** y configuración de *Default Gateways*.
-* Despliegue de **Ruteo Dinámico (RIP)** y convergencia de red ante fallas de enlaces.
-* Administración de Cisco IOS: RAM, NVRAM, Flash, y modos de configuración global/privilegiado.
-* Análisis y construcción manual de Tablas de Ruteo.
+* 🧮 **[[README]]:** Cálculo matemático de subredes (CIDR, VLSM), determinación de dominios de broadcast, prevención de solapamientos de red y validación lógica utilizando la consola de Linux (`ipcalc`).
 
-### 3. [IP Addressing & Subnetting](./03-IP-Addressing-and-Subnetting)
-Planificación lógica de la red para optimizar la asignación de direcciones.
-* Cálculo de subredes (Subnetting) para redes IPv4 (Clases A, B y C).
-* Determinación de direcciones de Red, Broadcast y rangos de hosts utilizables.
-
-### 4. [Linux Networking Configuration](./04-Linux-Networking-Config)
-Administración de interfaces de red directamente desde la terminal de servidores Linux.
-* Configuración de IP estática y dinámica utilizando **Netplan** (archivos `.yaml`).
-* Gestión de interfaces y tablas de ruteo locales con la suite `iproute2` (`ip addr`, `ip route`, `ip link`).
+* 🐧 **[04. Configuración de Redes en Linux](./04-Linux-Networking-Config):** Aprovisionamiento de conectividad a nivel de servidor sin entorno gráfico. Implementación nativa usando `Netplan` en Ubuntu Server, el método de interfaces tradicionales en Alpine Linux y diagnóstico con la suite `iproute2`.
 
 ---
 
-## 🎯 Caso de Uso Destacado
-Uno de los ejercicios más críticos documentados aquí es la **simulación de caída de enlaces en una topología en anillo**. Al configurar el protocolo de ruteo dinámico RIP, logré verificar cómo los routers convergen automáticamente y encuentran caminos alternativos para mantener la conectividad entre los hosts, una habilidad crucial para mantener la **Alta Disponibilidad (HA)** en entornos corporativos.
+## 🛠️ Stack Tecnológico
+* **Sistemas Operativos:** Ubuntu Server, Alpine Linux.
+* **Networking & Virtualización:** Cisco IOS, Packet Tracer, Proxmox (conceptos).
+* **Seguridad y Análisis de Tráfico:** Wireshark, tcpdump.
+* **Protocolos Dominados:** TCP/IP, ARP, ICMP, RIP, DNS.
 
 ---
-📫 **¿Conectamos?** Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/candela-nu%C3%B1ez27/) para hablar sobre Infraestructura, Soporte IT y Ciberseguridad.
+📫 **¿Conectamos?** Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC (Ciberseguridad)**, me encantaría charlar. 
+
+Te invito a conectar conmigo en [LinkedIn](https://www.linkedin.com/in/candela-nu%C3%B1ez27/).

@@ -32,7 +32,7 @@ network:
         addresses: [10.10.10.1, 1.1.1.1]
 ```
 
-![[captura_netplan_ubuntu.png]] _// CANDELA: Acá podés abrir tu máquina virtual de Ubuntu, hacer un `cat /etc/netplan/*.yaml` o abrir el archivo con `nano`, sacarle captura a esa consola negra y pegarla._
+![](../assets/Pasted%20image%2020260613234643.png)
 
 > **💻 Aplicación y Verificación:** Para compilar y aplicar los cambios sin necesidad de reiniciar el servidor, se ejecutó: `sudo netplan apply` Luego, se validó la asignación en la interfaz con `ip addr show eth0`.
 
@@ -47,7 +47,6 @@ Para entornos de prueba rápidos, se puede configurar la interfaz en modo DHCP. 
 Se modificó el archivo de interfaces para fijar los parámetros de red:
 
 
-
 ```Plaintext
 auto eth0
 iface eth0 inet static
@@ -56,7 +55,8 @@ iface eth0 inet static
     gateway 192.168.1.1
 ```
 
-![[captura_interfaces_alpine.png]] _// CANDELA: Si tenés a mano tu VM de Alpine, hacele un `cat /etc/network/interfaces` y sacale una captura a la terminal. Guardala en tus assets y ponela acá._
+
+![](../assets/Pasted%20image%2020260613234739.png)
 
 > **💻 Aplicación de Cambios:** En Alpine, el reinicio del demonio de red se invoca a través de su sistema de inicio (`OpenRC`): `sudo /etc/init.d/networking restart`
 
