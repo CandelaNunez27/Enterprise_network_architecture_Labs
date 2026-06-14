@@ -4,7 +4,7 @@
 
 Este repositorio es mi entorno de laboratorio. Aquí documento mis prácticas enfocadas en el diseño, configuración y resolución de problemas (*troubleshooting*) de infraestructuras de red. Mi objetivo es ir más allá de la teoría y demostrar, con capturas y comandos reales, cómo se comportan los datos desde el momento en que salen de una interfaz de red hasta que llegan a un servidor.
 
-## 🚀 ¿Qué vas a encontrar aquí?
+##  ¿Qué vas a encontrar aquí?
 
 El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 4 del modelo OSI. En ellas utilizo tanto equipamiento propietario (Cisco) como herramientas open-source (Linux, Wireshark).
 
