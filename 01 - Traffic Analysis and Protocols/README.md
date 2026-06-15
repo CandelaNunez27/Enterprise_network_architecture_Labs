@@ -1,6 +1,7 @@
-# 🕵️‍♀️ Laboratorio 01: Traffic Analysis & Core Protocols
+![](../assets/readme2.png)
+#  Laboratorio 01: Traffic Analysis & Core Protocols
 
-## 📌 Descripción de la Sección
+##  Descripción de la Sección
 
 Este directorio contiene entornos prácticos enfocados en la auditoría y análisis de tráfico de red. El objetivo principal es salir de la teoría del Modelo OSI y observar cómo se comportan los paquetes reales en las capas de Enlace, Red y Transporte utilizando herramientas de inspección profunda.
 
@@ -12,7 +13,7 @@ Este directorio contiene entornos prácticos enfocados en la auditoría y análi
 
 * **[03 - Análisis de Capa 4: TCP y UDP](03%20-%20Comportamiento%20TCP-UDP.md):** Comparativa de protocolos en entornos reales. Captura del *Three-Way Handshake* de TCP hacia un servidor web local (Apache2), análisis del control de flujo (Window Size) y rutinas de finalización, contrastado con el tráfico *stateless* de UDP en resoluciones DNS.
 
-## 🛠️ Herramientas Empleadas
+##  Herramientas Empleadas
 
 * **Analizador de Protocolos:** Wireshark en modo promiscuo.
 * **Comandos de Diagnóstico:** `ping`, `traceroute`, `arp`, `route`, utilidades de la suite `iproute2`.

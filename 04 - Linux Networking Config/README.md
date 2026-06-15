@@ -1,3 +1,4 @@
+![](../assets/readme5.png)
 #  Laboratorio 04: Linux Networking & Server Configuration
 
 ##  Descripción de la Sección
@@ -12,7 +13,7 @@ A continuación, se detalla la documentación técnica de esta sección:
 
 * **[01 - Administracion Interfaces Linux](01%20-%20Administracion%20Interfaces%20Linux.md):** Despliegue de configuraciones de red utilizando el estándar moderno **Netplan** (mediante serialización YAML) en Ubuntu Server, y el método tradicional gestionando `/etc/network/interfaces` en Alpine Linux. Incluye el uso intensivo de la suite `iproute2` para el diagnóstico y auditoría de los enlaces lógicos.
 
-## 🛠️ Herramientas Empleadas
+## Herramientas Empleadas
 * **Sistemas Operativos Operados:** Ubuntu Server, Alpine Linux.
 * **Gestores y Controladores de Red:** Netplan (backend `systemd-networkd`), OpenRC.
 * **Herramientas de Diagnóstico CLI:** Suite `iproute2` (`ip addr`, `ip route`, `ip link`, `ip neigh`).
