@@ -24,7 +24,7 @@ El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 
 * **Sistemas Operativos:** Ubuntu Server, Alpine Linux.
 * **Networking & Virtualización:** Cisco IOS, Packet Tracer, Proxmox (conceptos).
 * **Seguridad y Análisis de Tráfico:** Wireshark, tcpdump.
-* **Protocolos Dominados:** TCP/IP, ARP, ICMP, RIP, DNS.
+* **Protocolos y tecnologías trabajadas:** TCP/IP, ARP, ICMP, RIP, DNS.
 
 ---
 📫 **¿Conectamos?** Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC (Ciberseguridad)**, me encantaría charlar. 
