@@ -8,7 +8,7 @@ Este directorio contiene entornos prácticos enfocados en la auditoría y análi
 
 * **[01 - Análisis de Capa 2: MAC y ARP](01%20-%20Analisis%20ARP%20y%20MAC.md):** Inspección de direccionamiento físico (MAC), funcionamiento de solicitudes/respuestas ARP en entornos de red local y análisis de tablas de vecinos.
 
-* **[02 - Análisis de Capa 3: ICMP](02%20-%20Análisis%20y%20Diagnóstico%20de%20Red%20con%20ICMP):** Monitoreo de mensajes de control bidireccionales, rastreo de saltos lógicos mediante la manipulación del TTL (`traceroute`) y diagnóstico estructurado de fallas (interpretación de mensajes *Destination Unreachable*).
+* **[02 - Análisis de Capa 3: ICMP](02%20-%20Diagnostico%20ICMP%20Traceroute.md)]:** Monitoreo de mensajes de control bidireccionales, rastreo de saltos lógicos mediante la manipulación del TTL (`traceroute`) y diagnóstico estructurado de fallas (interpretación de mensajes *Destination Unreachable*).
 
 * **[03 - Análisis de Capa 4: TCP y UDP](03%20-%20Comportamiento%20TCP-UDP.md):** Comparativa de protocolos en entornos reales. Captura del *Three-Way Handshake* de TCP hacia un servidor web local (Apache2), análisis del control de flujo (Window Size) y rutinas de finalización, contrastado con el tráfico *stateless* de UDP en resoluciones DNS.
 

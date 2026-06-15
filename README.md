@@ -4,6 +4,14 @@
 
 Este repositorio es mi entorno de laboratorio. Aquí documento mis prácticas enfocadas en el diseño, configuración y resolución de problemas (*troubleshooting*) de infraestructuras de red. Mi objetivo es ir más allá de la teoría y demostrar, con capturas y comandos reales, cómo se comportan los datos desde el momento en que salen de una interfaz de red hasta que llegan a un servidor.
 
+##  Habilidades Demostradas (Skills)
+* ✔️ Network Troubleshooting (Diagnóstico de fallas en Capas 2, 3 y 4).
+* ✔️ Configuración y Administración de routers Cisco IOS.
+* ✔️ Enrutamiento Estático y Dinámico (RIPv2).
+* ✔️ Inspección Profunda de Paquetes (Deep Packet Inspection).
+* ✔️ Diseño Lógico de Subredes (Subnetting, CIDR).
+* ✔️ Administración de Interfaces de red en Linux (Netplan, iproute2).
+
 ##  ¿Qué vas a encontrar aquí?
 
 El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 4 del modelo OSI. En ellas utilizo tanto equipamiento propietario (Cisco) como herramientas open-source (Linux, Wireshark).
@@ -20,11 +28,11 @@ El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tecnologías y Protocolos Implementados
 * **Sistemas Operativos:** Ubuntu Server, Alpine Linux.
 * **Networking & Virtualización:** Cisco IOS, Packet Tracer, Proxmox (conceptos).
 * **Seguridad y Análisis de Tráfico:** Wireshark, tcpdump.
-* **Protocolos y tecnologías trabajadas:** TCP/IP, ARP, ICMP, RIP, DNS.
+* **Protocolos Trabajados:** TCP/IP, ARP, ICMP, RIPv2, DNS.
 
 ---
 📫 **¿Conectamos?** Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC (Ciberseguridad)**, me encantaría charlar. 
