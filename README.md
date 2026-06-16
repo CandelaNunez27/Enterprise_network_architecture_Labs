@@ -37,6 +37,6 @@ El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 
 
 ---
 📫 **¿Conectamos?**
-Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC (Ciberseguridad)**, me encantaría charlar. 
+Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC / NOC**, me encantaría charlar. 
 
 Te invito a conectar conmigo en [LinkedIn](https://www.linkedin.com/in/candela-nu%C3%B1ez27/).
