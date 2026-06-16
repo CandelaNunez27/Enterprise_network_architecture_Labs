@@ -1,5 +1,7 @@
-![](../assets/readme5.png)
+
 #  Laboratorio 04: Linux Networking & Server Configuration
+
+![](../assets/readme5.png)
 
 ##  Descripción de la Sección
 
