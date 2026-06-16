@@ -1,5 +1,7 @@
-![](../assets/readme4.jpg)
+
 #  Laboratorio 03: IP Addressing & Subnetting
+
+![](../assets/readme4.jpg)
 
 ## Descripción de la Sección
 Este directorio contiene la documentación técnica referida a la planificación lógica de redes (IPAM). Antes de configurar cualquier equipo físico o virtual, es imperativo establecer un diseño de direccionamiento IP sólido que optimice el rendimiento, limite los dominios de difusión (Broadcast Domains) y permita la escalabilidad futura.
