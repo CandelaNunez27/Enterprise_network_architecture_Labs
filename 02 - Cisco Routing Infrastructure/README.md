@@ -1,5 +1,7 @@
-![](../assets/readme3.jpg)
+
 #  Laboratorio 02: Cisco Routing & Infrastructure
+
+![](../assets/readme3.jpg)
 
 ##  Descripción de la Sección
 
