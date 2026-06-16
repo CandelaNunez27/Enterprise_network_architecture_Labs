@@ -1,5 +1,7 @@
-![](../assets/readme2.png)
+
 #  Laboratorio 01: Traffic Analysis & Core Protocols
+
+![](../assets/readme2.png)
 
 ##  Descripción de la Sección
 
