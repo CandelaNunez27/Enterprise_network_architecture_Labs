@@ -16,6 +16,7 @@ Para las pruebas de diagnóstico, se utilizó una topología estructurada con do
 ## 2. Verificación de Conectividad Base (Ping)
 
 Se inició el diagnóstico mediante la herramienta `ping` para medir la latencia y la tasa de pérdida de paquetes entre los nodos del laboratorio.
+
 ![](../assets/Pasted%20image%2020260611212451.png)
 ![](../assets/Pasted%20image%2020260611212610.png)
 ### Inspección Profunda (Deep Packet Inspection)
@@ -45,6 +46,7 @@ Al auditar este proceso con el sniffer, se comprobó la manipulación intenciona
 1. El equipo envía un paquete ICMP con **TTL = 1**.
 2. El primer router recibe el paquete, disminuye el TTL a 0, lo descarta y devuelve un error **ICMP Type 11 (Time-to-live exceeded)**, revelando así su dirección IP.
 3. El equipo envía el siguiente paquete con **TTL = 2**, descubriendo el segundo router, y así sucesivamente hasta alcanzar el destino.
+
 ![](../assets/Pasted%20image%2020260611234600.png)
 
 ---
