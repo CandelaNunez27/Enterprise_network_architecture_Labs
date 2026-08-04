@@ -11,12 +11,12 @@
 Este repositorio es mi entorno de laboratorio. Aquí documento mis prácticas enfocadas en el diseño, configuración y resolución de problemas (*troubleshooting*) de infraestructuras de red. Mi objetivo es ir más allá de la teoría y demostrar, con capturas y comandos reales, cómo se comportan los datos desde el momento en que salen de una interfaz de red hasta que llegan a un servidor.
 
 ##  Habilidades Demostradas (Skills)
-* ✔️ Network Troubleshooting (Diagnóstico de fallas en Capas 2, 3 y 4).
-* ✔️ Configuración y Administración de routers Cisco IOS.
-* ✔️ Enrutamiento Estático y Dinámico (RIPv2).
-* ✔️ Inspección Profunda de Paquetes (Deep Packet Inspection).
-* ✔️ Diseño Lógico de Subredes (Subnetting, CIDR).
-* ✔️ Administración de Interfaces de red en Linux (Netplan, iproute2).
+*  Network Troubleshooting (Diagnóstico de fallas en Capas 2, 3 y 4).
+*  Configuración y Administración de routers Cisco IOS.
+*  Enrutamiento Estático y Dinámico (RIPv2).
+*  Inspección Profunda de Paquetes (Deep Packet Inspection).
+*  Diseño Lógico de Subredes (Subnetting, CIDR).
+*  Administración de Interfaces de red en Linux (Netplan, iproute2).
 
 ##  ¿Qué vas a encontrar aquí?
 
@@ -41,7 +41,7 @@ El proyecto está dividido en cuatro grandes áreas, abarcando las capas 2, 3 y 
 * **Protocolos Trabajados:** TCP/IP, ARP, ICMP, RIPv2, DNS.
 
 ---
-📫 **¿Conectamos?**
+ **¿Conectamos?**
 Me apasiona resolver problemas y optimizar recursos. Si estás buscando sumar talento a tu equipo de **Soporte IT, Infraestructura o SOC / NOC**, me encantaría charlar. 
  [LinkedIn](https://www.linkedin.com/in/candela-nu%C3%B1ez27/).
 
